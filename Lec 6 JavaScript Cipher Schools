@@ -1,0 +1,84 @@
+// var x=5;
+// {
+//     let x=15; 
+//     console.log(x);
+// }
+// console.log(x);
+// var x=function(x,y){
+//     return x+y; // in this func this key word point var pass inside func.
+// };
+
+// const x=function(x,y){// this is known as arrow func
+//     return x+y; // here this keyword point global var
+// };
+// console.log(x(2,5));
+// var q1=["jan", "feb", "mar"];
+// var q2=["apr", "may", "june"];
+// var q3=["july", "aug", "sep"];
+// var q4=["oct", "nov", "dec"];
+// below we use ... operator which is spread operator use of this is it  take array without using loop .
+
+// var year=[...q1, ...q2, ...q3, ...q4];
+// console.log(year);
+var a=[4, 9,5,6,10];
+// var b=Math.max(...a);
+// console.log(b);
+// var sum=0;
+// for(let num of a){
+//     sum+=num;
+// }
+// console.log(sum);
+
+// var name="cipherschools";
+// var text="";
+// for(let ch of name){
+//     text+=ch+" ";
+// }
+// console.log(text);
+
+// const fruit=new Map([["apple", 500], ["guava", 300], ["grapes", 500], ["oranges", 250]]);
+// console.log(fruit);
+// console.log(fruit.get("apple"));
+//    const letters = new Set();
+//    letters.add("a");
+//    letters.add("b");
+//    letters.add("a");
+//    console.log(letters);
+ 
+// class car{
+//     constructor(name, mfgyear){
+//         this.name=name;
+//         this.mfgyear=mfgyear;
+//     }
+// }
+//  const mycar1=new car("fortuner", 2024);
+//  const mycar2=new car("endeauver ", 2024);
+//  console.log(mycar1, mycar2);
+
+// const myFunction = () => {
+//     return new Promise( (resolve, reject)=> {
+//     setTimeout (()=>  {
+//     console.log ("This is Inside Promise");
+//     resolve();
+//     }, 2000);
+//     );
+//     }:
+//     myFunction()
+//     then (() = {
+//     console. log ("Resolved");
+//     • catch ( () = {
+//     console.error ("Rejected");
+//     7);
+
+//  const addTwonum=(a,b=10)=> a+b;
+//  console.log(addTwonum(2));
+
+// if we want to add more number 
+ const addNum=(...args)=>{
+    var sum=0;
+    for(let arg of args){
+        sum+=arg;
+    }
+    return sum;
+ };
+ console.log(addNum(10,20,30,20));
